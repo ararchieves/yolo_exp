@@ -4,9 +4,10 @@ import shutil
 
 
 INRIA_DATA_URL = "https://drive.google.com/file/d/1EpDh7MyHzXbHNw_FYhbFijYipr2evc01/view?usp=sharing"
-DHA_DATA_URL = "https://drive.google.com/file/d/1fcbBQ5anGSa2oBzKBJugboG68QshFNd3/view?usp=sharing"
+DHA_DATA_URL = "https://drive.google.com/file/d/1ltD-F7jYFIbxecge-eQIOqOiAKbFSPH9/view?usp=sharing"
 
 def download_dataset(data='inria'):
+    data = data.lower()
     assert data in ['inria', 'dha'], f"Dataset {data} is not valid."
 
     if data == 'inria': url = INRIA_DATA_URL
